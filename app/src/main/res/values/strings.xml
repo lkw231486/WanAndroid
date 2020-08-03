@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WanAndroid</string>
+    <string name="bottomname1">首页</string>
+    <string name="bottomname2">项目</string>
+    <string name="bottomname3">广场</string>
+    <string name="bottomname4">公众号</string>
+    <string name="bottomname5">我的</string>
+    <string name="error_occurred">不好意思App翻车了。\n请拿已复制好的错误日志去啪啪啪得打作者的脸</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="choose_theme_color">主题颜色</string>
+    <string name="copyright_tip">本App使用的Api均为 玩安卓网站 提供，仅供于大家学习交流</string>
+</resources>

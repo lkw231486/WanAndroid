@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.example.wanandroid.app.weight.preference.PreferenceCategory
+        android:key="base"
+        android:title="基础设置">
+
+        <com.example.wanandroid.app.weight.preference.CheckBoxPreference
+            android:key="top"
+            android:summary="开启后首页会显示置顶文章"
+            android:title="显示置顶文章" />
+        <Preference
+            android:key="clearCache"
+            android:title="清除缓存" />
+        <Preference
+            android:key="exit"
+            android:title="退出登录" />
+    </com.example.wanandroid.app.weight.preference.PreferenceCategory>
+
+    <com.example.wanandroid.app.weight.preference.PreferenceCategory
+        android:key="other"
+        android:title="其他设置">
+
+        <Preference
+            android:key="mode"
+            android:summary="无"
+            android:title="列表动画" />
+
+        <com.example.wanandroid.app.weight.preference.IconPreference
+           android:key="color"
+            android:summary="设置APP主题颜色"
+            android:title="主题颜色"/>
+    </com.example.wanandroid.app.weight.preference.PreferenceCategory>
+
+    <com.example.wanandroid.app.weight.preference.PreferenceCategory
+        android:key="about"
+        android:title="关于">
+
+        <Preference
+            android:key="version"
+            android:title="版本更新" />
+
+        <Preference
+            android:key="author"
+            android:summary="一个练习时长一年半的安卓实习生"
+            android:title="作者" />
+        <Preference
+            android:key="project"
+            android:summary=""
+            android:title="项目源码" />
+<!--        <Preference-->
+<!--            android:key="open"-->
+<!--            android:summary="项目中用到的开源库"-->
+<!--            android:title="开源项目"-->
+<!--            app:isPreferenceVisible="false"/>-->
+
+        <Preference
+            android:key="copyRight"
+            android:summary="仅作个人及非商业用途"
+            android:title="版本盛名" />
+    </com.example.wanandroid.app.weight.preference.PreferenceCategory>
+</PreferenceScreen>

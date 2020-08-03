@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navition"
+    app:startDestination="@id/mainfragment">
+
+    <fragment
+        android:id="@+id/mainfragment"
+        android:name="com.example.wanandroid.ui.fragment.MainFragment"
+        android:label="HomeFragment">
+
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@+id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_webFragment"
+            app:destination="@+id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_lookInfoFragment"
+            app:destination="@+id/lookInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_collectFragment"
+            app:destination="@+id/collectFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_integralFragment"
+            app:destination="@+id/integralFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@+id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/action_mainFragment_to_articleFragment"
+            app:destination="@+id/articleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_addArticleFragment"
+            app:destination="@+id/addArticleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_stepCountFragment"
+            app:destination="@+id/stepCountFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_mainFragment_to_systemArrFragment"
+            app:destination="@+id/systemArrFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.wanandroid.ui.fragment.login.LoginFragment"
+        android:label="LoginFragment">
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@+id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.wanandroid.ui.fragment.login.RegisterFragment"
+        android:label="RegisterFragment">
+
+
+        <action android:id="@+id/action_registerFragment_to_mainFragment"
+            app:destination="@+id/mainfragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.example.wanandroid.ui.fragment.web.WebFragment"
+        android:label="WebFragment">
+
+        <action
+            android:id="@+id/action_webFragment_to_loginFragment"
+            app:destination="@+id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lookInfoFragment"
+        android:name="com.example.wanandroid.ui.fragment.lookinfo.LookInfoFragment"
+        android:label="LookInfoFragment">
+
+        <action
+            android:id="@+id/action_lookInfoFragment_to_loginFragment"
+            app:destination="@+id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_lookInfoFragment_to_webFragment"
+            app:destination="@id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/collectFragment"
+        android:name="com.example.wanandroid.ui.fragment.collect.CollectFragment"
+        android:label="CollectFragment">
+
+        <action
+            android:id="@+id/action_collectFragment_to_webFragment"
+            app:destination="@+id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.wanandroid.ui.fragment.setting.SettingFragment"
+        android:label="SettingFragment">
+
+        <action
+            android:id="@+id/action_settingFragment_to_webFragment"
+            app:destination="@+id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/integralFragment"
+        android:name="com.example.wanandroid.ui.fragment.integral.IntegralFragment"
+        android:label="IntegralFragment">
+
+        <action
+            android:id="@+id/action_integralFragment_to_webFragment"
+            app:destination="@+id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_integralFragment_to_integralHistoryFragment"
+            app:destination="@+id/integralHistoryFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/integralHistoryFragment"
+        android:name="com.example.wanandroid.ui.fragment.integral.IntegralHistoryFragment"
+        android:label="IntegralHistoryFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.wanandroid.ui.fragment.search.SearchFragment"
+        tools:layout="SearchFragment">
+
+        <action
+            android:id="@+id/action_searchFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_searchFragment_to_webFragment"
+            app:destination="@id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_searchFragment_to_lookInfoFragment"
+            app:destination="@id/lookInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_searchFragment_to_searchResultFragment"
+            app:destination="@id/searchResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.example.wanandroid.ui.fragment.search.SearchResultFragment"
+        android:label="SearchResultFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.wanandroid.ui.fragment.share.ArticleFragment"
+        android:label="ArticleFragment">
+
+        <action
+            android:id="@+id/action_articleFragment_to_webFragment"
+            app:destination="@id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_articleFragment_to_addArticleFragment"
+            app:destination="@+id/addArticleFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addArticleFragment"
+        android:name="com.example.wanandroid.ui.fragment.share.AddArticleFragment"
+        android:label="AddArticleFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/stepCountFragment"
+        android:name="com.example.wanandroid.ui.fragment.stepcounter.StepCountFragment"
+        android:label="StepCountFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/systemArrFragment"
+        android:name="com.example.wanandroid.ui.fragment.tree.SystemArrFragment"
+        android:label="SystemArrFragment">
+
+        <action
+            android:id="@+id/action_systemArrFragment_to_loginFragment"
+            app:destination="@+id/loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action android:id="@+id/action_systemArrFragment_to_webFragment"
+            app:destination="@+id/webFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action android:id="@+id/action_systemArrFragment_to_lookInfoFragment"
+            app:destination="@id/lookInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+</navigation>
