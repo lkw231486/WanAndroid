@@ -4,7 +4,6 @@ import android.app.Application
 import com.example.wanandroid.app.utils.CacheUtil
 import com.example.wanandroid.app.utils.SettingUtil
 import com.example.wanandroid.data.model.bean.UserInfo
-import com.tencent.bugly.crashreport.biz.UserInfoBean
 import me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel
 import me.hgj.jetpackmvvm.callback.livedata.UnPeekLiveData
 import me.hgj.jetpackmvvm.callback.livedata.UnPeekNotNullLiveData

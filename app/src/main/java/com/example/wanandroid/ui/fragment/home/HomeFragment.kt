@@ -64,7 +64,8 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         loadsir = LoadServiceInit(swipeRefresh) {
             //点击从试时触发操作
             loadsir.showCallback(LoadingCallback::class.java)
-//          RequestH
+            requestHomeViewModel.getBannerData()
+            requestHomeViewModel.getHomeDate(true)
         }
         toolbar?.run {
             init("首页")
@@ -91,6 +92,7 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         //初始化swipeRefreshLayout
         swipeRefresh.init {
             //触发刷新监听时请求数据
+            requestHomeViewModel.getBannerData()
             requestHomeViewModel.getHomeDate(true)
         }
         articleAdapter.run {

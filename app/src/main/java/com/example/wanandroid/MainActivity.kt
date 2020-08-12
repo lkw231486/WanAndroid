@@ -1,8 +1,6 @@
 package com.example.wanandroid
 
-import android.content.Intent
 import android.graphics.drawable.ColorDrawable
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
@@ -21,14 +19,15 @@ class MainActivity : BaseActivity<BaseViewModel, ActivityMainBinding>() {
     override fun initView(savedInstanceState: Bundle?) {
         supportActionBar?.setBackgroundDrawable(ColorDrawable(SettingUtil.getColor(this)))
         StatusBarUtil.setColor(this, SettingUtil.getColor(this), 0)
-                //进入首页可以做app检查更新，一般继承bugly在线升级与热更新成本较低
-            }
+        //进入首页可以做app检查更新，一般继承bugly在线升级与热更新成本较低
 
-            override fun createObserver() {
-                shareViewModel.appColor.observe(this, Observer {
-                    it?.let {
-                        supportActionBar?.setBackgroundDrawable(ColorDrawable(it))
-                        StatusBarUtil.setColor(this, it, 0)
+    }
+
+    override fun createObserver() {
+        shareViewModel.appColor.observe(this, Observer {
+            it?.let {
+                supportActionBar?.setBackgroundDrawable(ColorDrawable(it))
+                StatusBarUtil.setColor(this, it, 0)
             }
         })
     }
@@ -42,9 +41,9 @@ class MainActivity : BaseActivity<BaseViewModel, ActivityMainBinding>() {
      */
     override fun onNetworkStateChanged(netState: NetState) {
         super.onNetworkStateChanged(netState)
-        if (netState.isSuccess){
-          ToastUtils.showShort("有网络")
-        }else{
+        if (netState.isSuccess) {
+            ToastUtils.showShort("有网络")
+        } else {
             ToastUtils.showShort("没有网络")
         }
     }

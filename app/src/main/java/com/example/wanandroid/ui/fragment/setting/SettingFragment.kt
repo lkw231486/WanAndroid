@@ -17,7 +17,6 @@ import com.afollestad.materialdialogs.color.colorChooser
 import com.afollestad.materialdialogs.lifecycle.lifecycleOwner
 import com.afollestad.materialdialogs.list.listItemsSingleChoice
 import com.blankj.utilcode.util.AppUtils
-import com.blankj.utilcode.util.ColorUtils
 import com.example.wanandroid.R
 import com.example.wanandroid.app.event.AppViewModel
 import com.example.wanandroid.app.ext.initClose
@@ -192,9 +191,10 @@ class SettingFragment : PreferenceFragmentCompat(),
                val date=BannerResponse(
                    title = "一位练习时长一年半的实习生制作的玩转安卓App",
                    url =findPreference<Preference>("project")?.summary.toString()
+//                   url ="https://github.com/lkw231486/WanAndroid"
                )
               view?.let {
-                  nav().navigate(R.id.action_settingFragment_to_webFragment,Bundle().apply { putParcelable("bannerdata",date) })
+                  nav().navigate(R.id.action_settingFragment_to_webFragment,Bundle().apply { putParcelable("bannerData",date) })
               }
             false
         }

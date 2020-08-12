@@ -1,6 +1,7 @@
 package com.example.wanandroid.ui.fragment.publicnumber
 
 import android.os.Bundle
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ConvertUtils
@@ -120,6 +121,7 @@ class PublicChildFragment : BaseFragment<PublicNumberViewModel, IncludeListBindi
                 }
             }
         }
+
         requestPublicNumberViewModel.getPublicData(true, cid)
     }
 

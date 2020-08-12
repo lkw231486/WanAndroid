@@ -1,8 +1,6 @@
 package com.example.wanandroid.ui.activity
 
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import com.blankj.utilcode.util.ConvertUtils
 import com.example.wanandroid.MainActivity
@@ -19,7 +17,6 @@ import kotlinx.android.synthetic.main.activity_welcome.*
 import me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel
 import me.hgj.jetpackmvvm.ext.view.gone
 import me.hgj.jetpackmvvm.ext.view.visible
-import java.lang.reflect.Proxy
 
 /**
  *@ author: lkw

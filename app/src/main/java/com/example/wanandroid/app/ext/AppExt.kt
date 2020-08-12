@@ -1,6 +1,5 @@
 package com.example.wanandroid.app.ext
 
-import android.app.AppComponentFactory
 import android.content.Intent
 import android.net.Uri
 import android.text.TextUtils
@@ -15,7 +14,6 @@ import com.blankj.utilcode.util.ToastUtils
 import com.example.wanandroid.R
 import com.example.wanandroid.app.utils.CacheUtil
 import com.example.wanandroid.app.utils.SettingUtil
-import kotlinx.android.synthetic.main.banner_itemwelcome.*
 import java.io.BufferedReader
 import java.io.FileReader
 import java.lang.Exception

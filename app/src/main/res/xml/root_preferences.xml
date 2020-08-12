@@ -47,7 +47,7 @@
             android:title="作者" />
         <Preference
             android:key="project"
-            android:summary=""
+            android:summary="https://github.com/lkw231486/WanAndroid"
             android:title="项目源码" />
 <!--        <Preference-->
 <!--            android:key="open"-->

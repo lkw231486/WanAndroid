@@ -16,27 +16,27 @@ import java.math.BigDecimal
  */
 object CacheDataManager {
 
-    fun getTotalCacheSize(context: Context): String {
-        var cacheSize = getFolderSize(context.cacheDir)
-        if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
-            cacheSize += getFolderSize(context.externalCacheDir)
-        }
-        return getFormatSize(cacheSize.toDouble())
-    }
+                fun getTotalCacheSize(context: Context): String {
+                    var cacheSize = getFolderSize(context.cacheDir)
+                    if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
+                        cacheSize += getFolderSize(context.externalCacheDir)
+                    }
+                    return getFormatSize(cacheSize.toDouble())
+                }
 
-    fun clearAllCache(activity: AppCompatActivity?) {
-        activity?.let {
-            deleteDir(it.cacheDir)
-            if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
-                if (it.externalCacheDir == null) {
-                    it.showMessage("清理缓存失败")
-                }
-                return
-            }
-            it.externalCacheDir?.let { file ->
-                if (deleteDir(file)) {
-                    activity.showMessage("清理缓存成功")
-                }
+                fun clearAllCache(activity: AppCompatActivity?) {
+                    activity?.let {
+                        deleteDir(it.cacheDir)
+                        if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
+                            if (it.externalCacheDir == null) {
+                                it.showMessage("清理缓存失败")
+                            }
+                            return
+                        }
+                        it.externalCacheDir?.let { file ->
+                            if (deleteDir(file)) {
+                                activity.showMessage("清理缓存成功")
+                            }
             }
         }
     }

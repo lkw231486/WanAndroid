@@ -5,11 +5,8 @@ import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
-import android.widget.Toast
-import android.widget.Toolbar
 import cat.ereza.customactivityoncrash.CustomActivityOnCrash
 import com.blankj.utilcode.util.ToastUtils
-import com.blankj.utilcode.util.ToastUtils.showShort
 import com.example.wanandroid.R
 import com.example.wanandroid.app.base.BaseActivity
 import com.example.wanandroid.app.ext.init

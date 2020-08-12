@@ -24,8 +24,8 @@ class ArticleAdapter(date: MutableList<AriticleResponse>?) :
     BaseDelegateMultiAdapter<AriticleResponse, BaseViewHolder>(date) {
 
     private var mOnCollectViewClickListener: OnCollectViewClickListener? = null
-    private val Article = 1 //文章类型
-    private val Project = 2//项目类型
+    private val article = 1 //文章类型
+    private val project = 2//项目类型
     private var showTag = false//是否展示标签，tag一般主页才用的到
 
     constructor(date: MutableList<AriticleResponse>?, showTag: Boolean) : this(date) {
@@ -38,19 +38,19 @@ class ArticleAdapter(date: MutableList<AriticleResponse>?) :
         setMultiTypeDelegate(object : BaseMultiTypeDelegate<AriticleResponse>() {
             override fun getItemType(data: List<AriticleResponse>, position: Int): Int {
                 //根据是否有图片 判断为文章还是项目，好像有点low的感觉。。。我看实体类好像没有相关的字段，就用了这个，也有可能是我没发现
-                return if (TextUtils.isEmpty(data[position].envelopePic)) Article else Project
+                return if (TextUtils.isEmpty(data[position].envelopePic)) article else project
             }
         })
         //第二步，绑定布局文件
         getMultiTypeDelegate()?.let {
-            it.addItemType(Article, R.layout.item_ariticle)
-            it.addItemType(Project, R.layout.item_project)
+            it.addItemType(article, R.layout.item_ariticle)
+            it.addItemType(project, R.layout.item_project)
         }
     }
 
     override fun convert(holder: BaseViewHolder, item: AriticleResponse) {
         when (holder.itemViewType) {
-            Article -> {
+            article -> {
                 //文章布局赋值
                 item.run {
                     holder.setText(
@@ -85,7 +85,7 @@ class ArticleAdapter(date: MutableList<AriticleResponse>?) :
                     })
             }
 
-            Project -> {
+            project -> {
                 //项目布局赋值
                 item.run {
                     holder.setText(

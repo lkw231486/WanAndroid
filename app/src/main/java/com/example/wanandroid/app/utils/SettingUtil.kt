@@ -6,17 +6,14 @@ import android.graphics.Color
 import android.graphics.PorterDuff
 import android.graphics.drawable.GradientDrawable
 import android.os.Build
-import android.provider.ContactsContract
 import android.view.View
 import android.widget.ProgressBar
 import androidx.core.content.ContextCompat
-import androidx.core.graphics.alpha
 import androidx.preference.PreferenceManager
 import com.blankj.utilcode.util.Utils
 import com.example.wanandroid.R
 import com.example.wanandroid.app.weight.loadCallBack.LoadingCallback
 import com.kingja.loadsir.core.LoadService
-import com.kingja.loadsir.core.LoadSir
 import com.tencent.mmkv.MMKV
 
 /**
