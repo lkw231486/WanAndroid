@@ -1,9 +1,6 @@
 package com.example.wanandroid
 
-import android.content.Intent
 import android.graphics.drawable.ColorDrawable
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
